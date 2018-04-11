@@ -1,0 +1,35 @@
+.wrapper {
+  background-color: lightblue;
+  height: 1000px;
+  width: 100%;
+}
+.buildings {
+  background-color: yellow;
+  height: 400px;
+  width: 1000px;
+  border: 2px solid black;
+  /* display: inline-block; */
+}
+
+.buildings form {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 2px solid green;
+}
+
+.gain {
+  color: green;
+}
+
+.loss {
+  color: red;
+}
+
+.activities {
+  width: 500px;
+  height: 200px;
+  background-color: lightsalmon;
+  overflow: scroll;
+
+}

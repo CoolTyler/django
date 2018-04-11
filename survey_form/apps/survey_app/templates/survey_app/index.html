@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h3>Survey Form</h3>
+    <form action="/survey/process" method="POST" id="surv">
+      {% csrf_token %}
+      <h5>Your Name:</h5>
+      <input type="text" name="name">
+      <h5>Favorite pet:</h5>
+      <select name="pet" form="surv">
+        <option value="Cats">Cats</option>
+        <option value="Dogs">Dogs</option>
+        <option value="Alligators">Alligators</option>
+        <option value="Birds">Birds</option>
+        <option value="Horses">Horses</option>
+      </select>
+      <h5>Favorite body part:</h5>
+      <select name="body" form="surv">
+        <option value="Nose">Nose</option>
+        <option value="Elbow">Elbow</option>
+        <option value="Heel of foot">Heel of foot</option>
+        <option value="Back of knee">Back of knee</option>
+        <option value="Forehead">Forehead</option>
+      </select>
+      <h5>Leave a comment:</h5>
+      <textarea name="comment" form="surv"></textarea>
+      <input type="submit" name="submit" value="submit">
+    </form>
+    <!-- <h4>{{ request.session.word }}</h4> -->
+    <!-- <a href="/surveys/process"><button>Generate Word</button></a>
+    <a href="/result"><button>Reset Word</button></a> -->
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Random String Generator</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h3>Random word: (attempt #{{ request.session.tries }})</h3>
+    <h4>{{ request.session.word }}</h4>
+    <a href="/generate"><button>Generate Word</button></a>
+    <a href="/reset"><button>Reset Word</button></a>
+  </body>
+</html>
